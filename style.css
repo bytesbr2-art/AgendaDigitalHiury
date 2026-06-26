@@ -172,82 +172,81 @@ footer {
 /* TEMA ESCURO GÓTICO */
 /* ===================== */
 
+/* ===================== */
+/* TEMA ESCURO GÓTICO */
+/* ===================== */
+
 body.escuro {
-    background: #000;
-    color: #d9d9d9;
+    color: #ffffff;
+
+    background-image: url("img2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
 }
 
+/* Escurece o conteúdo para facilitar a leitura */
+
 body.escuro .conteudo {
-    background: linear-gradient(
-        180deg,
-        #000,
-        #050505,
-        #0d0d0d
-    );
+    background: rgba(0, 0, 0, 0.75);
+    backdrop-filter: blur(3px);
+    min-height: 100vh;
 }
 
 body.escuro .menu-lateral {
-    background: #050505;
+    background: rgba(0, 0, 0, 0.90);
     border-right: 1px solid #555;
 }
 
 body.escuro .menu-lateral button {
-    background: transparent;
-    border: 1px solid #444;
-    color: #d8d8d8;
+    background: rgba(20, 20, 20, 0.8);
+    border: 1px solid #666;
+    color: white;
 }
 
 body.escuro .menu-lateral button:hover {
-    background: #1a1a1a;
+    background: rgba(60, 60, 60, 0.8);
 }
 
 body.escuro h1,
 body.escuro h2,
 body.escuro p,
 body.escuro label {
-    color: white;
+    color: #ffffff;
 }
 
 body.escuro input,
 body.escuro select {
-    background: #111;
+    background: rgba(20, 20, 20, 0.9);
     color: white;
     border: 1px solid #666;
 }
 
 body.escuro #listaTarefas li {
-    background: #111;
+    background: rgba(15, 15, 15, 0.9);
     color: white;
-    border: 1px solid #444;
+    border: 1px solid #555;
 }
 
 body.escuro #listaTarefas li:hover {
-    background: #1a1a1a;
+    background: rgba(40, 40, 40, 0.9);
 }
 
 body.escuro .botoes button {
-    background: #1a1a1a;
-    border: 1px solid #777;
+    background: rgba(30, 30, 30, 0.9);
+    border: 1px solid #666;
 }
 
 body.escuro .botoes button:hover {
-    background: #2c2c2c;
+    background: rgba(60, 60, 60, 0.9);
 }
 
 body.escuro footer {
-    background: #050505;
-    border-top: 1px solid #444;
+    background: rgba(0, 0, 0, 0.9);
+    border-top: 1px solid #555;
 }
 
 body.escuro .imagem-inicial {
-
-    filter:
-        grayscale(100%)
-        brightness(0.85)
-        contrast(1.2);
-
-    border: 1px solid #444;
-
-    box-shadow:
-        0 0 25px rgba(255,255,255,0.15);
+    display: none;
 }

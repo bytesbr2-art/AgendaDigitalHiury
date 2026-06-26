@@ -171,12 +171,12 @@ footer {
 /* ===================== */
 /* TEMA ESCURO GÓTICO */
 /* ===================== */
-
 /* ===================== */
 /* TEMA ESCURO GÓTICO */
 /* ===================== */
 
 body.escuro {
+
     color: #ffffff;
 
     background-image: url("img2.png");
@@ -186,26 +186,32 @@ body.escuro {
     background-repeat: no-repeat;
 }
 
-/* Escurece o conteúdo para facilitar a leitura */
-
 body.escuro .conteudo {
+
     background: rgba(0, 0, 0, 0.75);
     backdrop-filter: blur(3px);
+
     min-height: 100vh;
 }
 
 body.escuro .menu-lateral {
+
     background: rgba(0, 0, 0, 0.90);
+
     border-right: 1px solid #555;
 }
 
 body.escuro .menu-lateral button {
+
     background: rgba(20, 20, 20, 0.8);
+
     border: 1px solid #666;
+
     color: white;
 }
 
 body.escuro .menu-lateral button:hover {
+
     background: rgba(60, 60, 60, 0.8);
 }
 
@@ -213,40 +219,54 @@ body.escuro h1,
 body.escuro h2,
 body.escuro p,
 body.escuro label {
+
     color: #ffffff;
 }
 
 body.escuro input,
 body.escuro select {
+
     background: rgba(20, 20, 20, 0.9);
+
     color: white;
+
     border: 1px solid #666;
 }
 
 body.escuro #listaTarefas li {
+
     background: rgba(15, 15, 15, 0.9);
+
     color: white;
+
     border: 1px solid #555;
 }
 
 body.escuro #listaTarefas li:hover {
+
     background: rgba(40, 40, 40, 0.9);
 }
 
 body.escuro .botoes button {
+
     background: rgba(30, 30, 30, 0.9);
+
     border: 1px solid #666;
 }
 
 body.escuro .botoes button:hover {
+
     background: rgba(60, 60, 60, 0.9);
 }
 
 body.escuro footer {
+
     background: rgba(0, 0, 0, 0.9);
+
     border-top: 1px solid #555;
 }
 
 body.escuro .imagem-inicial {
+
     display: none;
 }

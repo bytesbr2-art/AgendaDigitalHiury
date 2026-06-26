@@ -42,6 +42,7 @@ body {
     color: white;
     cursor: pointer;
     font-size: 16px;
+    transition: 0.3s;
 }
 
 .menu-lateral button:hover {
@@ -67,18 +68,36 @@ body {
     margin-bottom: 15px;
 }
 
+.tela h2 {
+    margin-bottom: 15px;
+}
+
 .tela p {
     margin-top: 10px;
+}
+
+/* LISTA INICIAL */
+
+.info-lista {
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.info-lista li {
+    background: transparent;
+    box-shadow: none;
+    padding: 5px;
 }
 
 /* IMAGEM */
 
 .imagem-inicial {
-    width: 500px;
+    width: 900px;
     max-width: 100%;
     margin-top: 30px;
     border-radius: 20px;
-    box-shadow: 0px 5px 15px rgba(0,0,0,0.3);
+    display: block;
+    box-shadow: 0px 5px 20px rgba(0,0,0,0.4);
 }
 
 /* INPUT */
@@ -112,14 +131,14 @@ input {
     background: #1d4ed8;
 }
 
-/* LISTA */
+/* LISTA TAREFAS */
 
-ul {
+#listaTarefas {
     list-style: none;
     margin-top: 30px;
 }
 
-li {
+#listaTarefas li {
     background: white;
     padding: 15px;
     border-radius: 10px;
@@ -138,7 +157,6 @@ li {
 select {
     width: 250px;
     padding: 10px;
-    margin-top: 15px;
 }
 
 /* RODAPÉ */
@@ -150,21 +168,86 @@ footer {
     padding: 20px;
 }
 
-/* TEMA ESCURO */
+/* ===================== */
+/* TEMA ESCURO GÓTICO */
+/* ===================== */
 
 body.escuro {
-    background: #111827;
-    color: white;
+    background: #000;
+    color: #d9d9d9;
 }
 
-body.escuro li {
-    background: #374151;
+body.escuro .conteudo {
+    background: linear-gradient(
+        180deg,
+        #000,
+        #050505,
+        #0d0d0d
+    );
+}
+
+body.escuro .menu-lateral {
+    background: #050505;
+    border-right: 1px solid #555;
+}
+
+body.escuro .menu-lateral button {
+    background: transparent;
+    border: 1px solid #444;
+    color: #d8d8d8;
+}
+
+body.escuro .menu-lateral button:hover {
+    background: #1a1a1a;
+}
+
+body.escuro h1,
+body.escuro h2,
+body.escuro p,
+body.escuro label {
     color: white;
 }
 
 body.escuro input,
 body.escuro select {
-    background: #374151;
+    background: #111;
     color: white;
     border: 1px solid #666;
+}
+
+body.escuro #listaTarefas li {
+    background: #111;
+    color: white;
+    border: 1px solid #444;
+}
+
+body.escuro #listaTarefas li:hover {
+    background: #1a1a1a;
+}
+
+body.escuro .botoes button {
+    background: #1a1a1a;
+    border: 1px solid #777;
+}
+
+body.escuro .botoes button:hover {
+    background: #2c2c2c;
+}
+
+body.escuro footer {
+    background: #050505;
+    border-top: 1px solid #444;
+}
+
+body.escuro .imagem-inicial {
+
+    filter:
+        grayscale(100%)
+        brightness(0.85)
+        contrast(1.2);
+
+    border: 1px solid #444;
+
+    box-shadow:
+        0 0 25px rgba(255,255,255,0.15);
 }

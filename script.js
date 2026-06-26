@@ -33,7 +33,6 @@ function adicionarTarefa() {
         .getElementById("listaTarefas")
         .appendChild(item);
 
-
     totalTarefas++;
 
     atualizarContador();
@@ -54,7 +53,6 @@ function limparTarefas() {
     totalTarefas = 0;
 
     atualizarContador();
-
 }
 
 
@@ -65,7 +63,6 @@ function atualizarContador() {
 
     document.getElementById("contador").textContent =
         "Total de tarefas: " + totalTarefas;
-
 }
 
 
@@ -85,7 +82,6 @@ function mostrarTela(idTela) {
     document
         .getElementById(idTela)
         .classList.add("ativa");
-
 }
 
 
@@ -107,14 +103,12 @@ function alterarTema() {
         document.body.classList.remove("escuro");
 
         localStorage.setItem("tema", "claro");
-
     }
-
 }
 
 
 
-// CARREGAR TEMA
+// CARREGAR TEMA SALVO
 
 window.onload = function () {
 
@@ -125,7 +119,5 @@ window.onload = function () {
         document.body.classList.add("escuro");
 
         document.getElementById("tema").value = "escuro";
-
     }
-
-};
+}
